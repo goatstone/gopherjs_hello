@@ -1,0 +1,14 @@
+application: flint-goatstone
+version: 10
+runtime: go
+api_version: go1
+
+handlers:
+
+- url: /hello.js
+  static_files:  hello.js
+  upload:  hello.js
+
+- url: /.*
+  static_files:  index.html
+  upload:  index.html
